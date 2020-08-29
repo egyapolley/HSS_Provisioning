@@ -87,7 +87,7 @@ public class Main_JDK6 {
 
                         if (provisionSuccess) {
 
-                            SimpleDateFormat simpleDateFormat =new SimpleDateFormat("yyyMMdd");
+                            SimpleDateFormat simpleDateFormat =new SimpleDateFormat("yyyMMddHHmmss");
                             String outputFile = output_dir_prop + "/" +  simpleDateFormat.format(new Date()) + "-" + file_name;
                             boolean fileMoveStatus = fileInput.renameTo(new File(outputFile));
 
